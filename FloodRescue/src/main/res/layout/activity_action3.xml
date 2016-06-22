@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.krumbs.sdk.rescue.Action3Activity">
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:stretchColumns="*"
+        android:background="@color/light_gray">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@color/blue">
+            <TextView
+                android:text="Flood Situation Forecast"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_span="6"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text=""/>
+            <TextView
+                android:text="Now"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:text="Next hr"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:text="+2 hrs"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:text="+6 hrs"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:text="Next day"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Condition"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minor" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minor" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/moderate" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/moderate" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/major"
+                android:paddingBottom="5dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@color/blue">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text="Your curren flood situation: Minor"
+                android:layout_span="6"
+                android:textColor="@color/white"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_height="225dp"
+                android:layout_span="6"
+                android:layout_width="48dip"
+                android:src="@drawable/flood_map"/>
+        </TableRow>
+        <TableRow
+            android:background="@color/blue">
+
+            <TextView
+                android:text="Taking Action"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_span="6"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"/>
+
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:src="@drawable/resource_supply"/>
+            <TextView
+                android:layout_span="4"
+                android:paddingTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="Be ready: get supply and flood kit\n@Red Cross Shelter"/>
+            <ImageView
+                android:src="@drawable/direction"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:src="@drawable/resource_shelter"/>
+            <TextView
+                android:layout_span="4"
+                android:layout_gravity="center_vertical"
+                android:text="Nearest shelter: Red Cross \n2834 Charan 27 Rd, Bangkok 10700"/>
+            <ImageView
+                android:src="@drawable/direction"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <!--<TableRow-->
+            <!--android:background="@color/light_blue">-->
+
+            <!--<TextView-->
+                <!--android:text="Micro Report Summary"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_span="6"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"/>-->
+
+        <!--</TableRow>-->
+        <!--<TableRow>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Submitting Report"-->
+                <!--android:id="@+id/kcapturebutton"-->
+                <!--android:layout_below="@id/hello_world"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_span="6"-->
+                <!--/>-->
+        <!--</TableRow>-->
+
+    </TableLayout>
+    </RelativeLayout>
